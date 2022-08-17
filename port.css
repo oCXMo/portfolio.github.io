@@ -1,0 +1,226 @@
+:root{
+    --primary:#3dcfd3;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2f2;
+    --secondary:#070606;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #edf2f8;
+    font-family: 'Poppins',sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+    height: 2000px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background: black;
+    opacity: 90%;
+    clip-path: polygon(0 0,100% 0, 100% 100%,70% 88%,0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.item-centre{
+    align-items: center;
+}
+header nav .left a{
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header nav.left a:hover{
+    color: var(--primary);
+}
+.justify-between{
+    justify-content: space-between;
+}
+header nav{
+    padding: 2rem 0;
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--dark);
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.hero{
+    padding: 4rem 0;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size:4rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    padding-left: 10px;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: .7rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    font-size: 1.5rem;
+    font-weight: 80;
+    padding-left: 20px;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--ternary);
+}
+.flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+section{
+    padding: 6rem;
+}
+section .about .about-image{
+    height: 40px;
+    width: 55px;
+}
+.hero .left img{
+    border-radius: 40%;
+}
+.section-heading{
+    text-align:center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+section.services{
+    background: var(--light);
+}
+section.services.card-wrapper.card{
+    background: var(--pure);
+}
+
+section.services .card-wrapper .card:hover {
+    background: var(--primary);
+    opacity: 50%;
+    transition: all 0.3s;
+}
+section.services .card-wrapper .card img{
+    margin-bottom: 0.2rem;
+    padding-top: 1rem;
+}
+section.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img {
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+section.contact .card-wrapper .card h1 {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    font-size: 0.8rem;
+    border-radius: 10%;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    border-radius: 10%;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    border-radius: 2%;
+}
+section.contact .input-wrap-2 textarea:focus,section.contact input:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+footer{
+    text-align: center;
+    padding:5rem 0;
+    font-size: 20px;
+    color: var(--ternary);
+}
+section.about .flex-1 h1,section.about .flex-1 h3,section.about .flex-1 p{
+    text-align: center;
+    font-size: 30px;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="port.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="script" href="port.js">
+</head>
+<body>
+<header>
+    <div class="container">
+    <nav class="flex item-centre justify-between">
+        <div class="left flex item-centre">
+            <div class="branding">
+                <img src="./images-for-portfolio/images/logo.svg" alt="creative">
+            </div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#project">Final Year Project</a>
+                <a href="#Skill">Skill Acquired</a>
+                <a href="#contact">Contact</a>
+                <a href="#reach">Reach</a>
+            </div>
+        </div>
+        <div class="right">
+            <button class="btn btn-primary">CONTACT</button>
+        </div>
+    </nav>
+        <div class="hero flex item-centre justify-between">
+            <div class="left flex-1 flex justify-center">
+                <img src="./images-for-portfolio/images/DSC04822.JPG" alt="Profile"  height="650px" width="400px">
+            </div>
+            <div class="right flex-1">
+                <h6>Amit Kumar</h6>
+                <h1>I'm <span>Creative</span></h1>
+                <p>I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening my knowledge, and realizing my potential.
+                    I am willing to explore a wide variety of opportunities that can help me gain perspective.</p>
+               <div>
+                   <form method="get" action="./images-for-portfolio/images/Amit's%20Resume.pdf">
+                <button type="submit" class="btn btn-secondary">DOWNLOAD CV</button>
+                   </form>
+               </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="about">
+    <div class="container flex item-centre">
+        <div class="flex-1">
+            <img class="about-image" src="./images-for-portfolio/images/Project%20Model.jpg" alt="Adriano">
+        </div>
+    </div>
+    <div id="project" class="flex-1">
+        <h1 style="font-size: 50px">Final Year <span style="color: var(--primary)">Project</span></h1>
+        <h3>GAS LEAKAGE DETECTION USING ARDUINO UNO</h3>
+        <p>The main objective of the project is to detect the presence of gases
+            in an area noticed by the Arduino.This project therefore seeks to design a microcontroller-based smoke alarm that
+            will continuously monitor the presence of significant amount of smoke and
+            activate an alarm to prompt a safety measure to contain the situation. There is also
+            an extra functionality of LCD display for visual alert.The Arduino UNO turns on the
+            LCD and buzzer. It even turns on the GSM modem after that, it
+            continues to send messages SMS to mobile numbers mentioned
+            explicitly in the program of the source code for alert danger to the
+            people.</p>
+    </div>
+</section>
+<section id="Skill" class="services">
+    <div class="container">
+        <h1 class="section-heading" style="font-size: 40px"><span>Skill</span> Acquired</h1>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="./images-for-portfolio/images/java-4-logo.svg" alt="java" height="100" width="115">
+            </div>
+            <div class="card">
+                <img src="./images-for-portfolio/images/HTML5_logo_and_wordmark.svg" alt="java" height="100" width="115">
+            </div>
+            <div class="card">
+            <img src="./images-for-portfolio/images/CSS3_logo_and_wordmark.svg" alt="java" height="100" width="115">
+        </div>
+            <div class="card">
+            <img src="./images-for-portfolio/images/Unofficial_JavaScript_logo_2.svg" alt="java" height="100" width="115">
+        </div>
+            <div class="card">
+            <img src="./images-for-portfolio/images/ISO_C++_Logo.svg" alt="java" height="100" width="115">
+        </div>
+            <div class="card">
+                <img src="./images-for-portfolio/images/sql-database-generic.svg" alt="java" height="100" width="115">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <div class="container">
+        <h1 class="section-heading" style="font-size: 25px">Contact<span> Info</span></h1>
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="./images-for-portfolio/images/phone.png" alt=""  height="70" width="80">
+                <h2>Call Us On</h2>
+                <h6>+91 8987865961</h6>
+            </div>
+            <div class="card">
+                <img src="./images-for-portfolio/images/147563.svg" alt="" height="70" width="80">
+                <h2>Email</h2>
+                <h6>amitkumar.cxm@outlook.com</h6>
+            </div>
+            <div class="card">
+                <img src="./images-for-portfolio/images/1093169.svg" alt="" height="70" width="80">
+                <h2>Location</h2>
+                <h6>Kadma,Jamshedpur</h6>
+            </div>
+        </div>
+    <form id="reach" action="">
+        <div class="input-wrap">
+                <input type="text" placeholder="Your Name *">
+                <input type="email" placeholder="Your Email *">
+        </div>
+        <div class="input-wrap-2">
+                <input type="text" placeholder="Your Subject....">
+                <textarea name="" id=""  cols="30" rows="10" placeholder="Your Message...."></textarea>
+        </div>
+        <div class="btn-wrapper">
+            <button class="btn btn-primary" >Summit Message</button>
+        </div>
+    </form>
+    </div>
+</section>
+<footer>
+    <h6>&#169;Copyright 2019. All right reserved</h6>
+</footer>
+</body>
+</html>
